@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Traditional Games</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="games.css">
+    <style>
+    body {
+        min-height: 100vh;
+        background: linear-gradient(-45deg, #f7b42c, #fc575e, #43cea2, #185a9d);
+        background-size: 400% 400%;
+        animation: gradientBG 18s ease infinite;
+    }
+    @keyframes gradientBG {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
+    }
+    .game-card {
+        transition: transform 0.3s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .game-card:hover {
+        transform: translateY(-10px) scale(1.03);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        z-index: 2;
+    }
+    .modern-btn {
+        background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+        color: #fff;
+        border: none;
+        border-radius: 24px;
+        padding: 0.75em 2em;
+        font-size: 1.1em;
+        font-weight: 600;
+        margin-top: 1em;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(67,206,162,0.12);
+        transition: background 0.3s, transform 0.2s;
+    }
+    .modern-btn:hover {
+        background: linear-gradient(90deg, #fc575e 0%, #f7b42c 100%);
+        transform: scale(1.05);
+    }
+    .logo {
+        font-size: 2.5em;
+        animation: logoPulse 2.5s infinite alternate;
+    }
+    .header-content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 260px;
+    }
+    .flags-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        opacity: 0.14;
+        pointer-events: none;
+        z-index: 1;
+    }
+    .flags-container .flag {
+        width: 320px;
+        height: 220px;
+        object-fit: cover;
+        margin: 0 18px;
+        filter: drop-shadow(0 4px 32px rgba(0,0,0,0.10));
+        border-radius: 20px;
+    }
+    @keyframes logoPulse {
+        0% { color: #185a9d; }
+        100% { color: #fc575e; }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">𓃗</div>
+        <div class="header-content">
+            <h1>African Traditional Games</h1>
+            <div class="flags-container">
+                <img src="https://flagcdn.com/w80/gh.png" alt="Ghana Flag" class="flag">
+                <img src="https://flagcdn.com/w80/bw.png" alt="Botswana Flag" class="flag">
+                <img src="https://flagcdn.com/w80/ng.png" alt="Nigeria Flag" class="flag">
+                <img src="https://flagcdn.com/w80/za.png" alt="South Africa Flag" class="flag">
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#countries">Countries</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="games">
+            <h2 class="section-title">Traditional Games</h2>
+                <p>African traditional games are age-old activities passed down through generations, played for fun, learning, and community bonding. They often use simple materials—like stones, sticks,
+                     seeds, or even chalk drawings—but carry deep cultural value. These games help teach skills such as strategy, teamwork, counting, and coordination. They also serve as a way for
+                    communities to share stories, preserve traditions, and strengthen relationships across ages. From the seed-counting game *Oware* in West Africa to stick-throwing challenges
+                    in Southern Africa, each game reflects the creativity and spirit of its people.
+</p>
+            <div class="games-grid">
+                <!-- Ghana Games -->
+                 <!-- Kwasiada Frankaa -->
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://source.unsplash.com/random/400x300/?game,ghana')"></div>
+                    <div class="game-content">
+                       
+                        <h3 class="game-title">Kwasiada Frankaa</h3>
+                        <div class="game-country">
+                            <img src="https://flagcdn.com/w40/gh.png" alt="Ghana Flag" class="country-flag">
+                            <span>Ghana</span>
+                        </div>
+                        <p class="game-desc">Kwasiada Frankaa is a traditional Ghanaian game often played by
+                             children, especially in villages and during leisure times. The name means 
+                             “Sunday Flag” in Akan, and it is usually played outdoors in an open space. 
+                             In the game, players hold or display a “flag” (which can be any cloth or object)
+                              and take turns running, chasing, or tricking each other to capture it. It is 
+                              both a test of speed and strategy, as players must outsmart opponents while 
+                              protecting their own flag. Beyond fun, Kwasiada Frankaa builds teamwork, quick 
+                              thinking, and physical fitness, while keeping alive a cherished part of Ghana’s cultural heritage.
+                        </p>
+                        <button class="watch-btn modern-btn"><span>Watch Video</span></button>
+                        <div class="video-container" style="display:none;">
+                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/NSy2oT7WqsY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- Antoakyire-->
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://source.unsplash.com/random/400x300/?game,ghana')"></div>
+                    <div class="game-content">
+                        <h3 class="game-title">Antoakyire</h3>
+                        <div class="game-country">
+                            <img src="https://flagcdn.com/w40/gh.png" alt="Ghana Flag" class="country-flag">
+                            <span>Ghana</span>
+                        </div>
+                        <p class="game-desc">Antokyire (pronounced approximately "An-toh-kyi-reh") is a community in the Ashanti Region of Ghana. 🇬🇭
+                                            It's primarily known for its association with agriculture, like many other communities in the region.
+                                             While not a major urban center, it plays a role in the local economy through farming activities.
+                                              Specific details about Antokyire can be quite localized, often appearing in reports or discussions
+                                               about regional development, local governance, or agricultural initiatives within the Ashanti Region.
+                        </p>
+                        <button class="watch-btn modern-btn"><span>Watch Video</span></button>
+                        <div class="video-container" style="display:none;">
+                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/8AZ-4uatCPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sansankroma -->
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://source.unsplash.com/random/400x300/?ghana,children')"></div>
+                    <div class="game-content">
+                        <h3 class="game-title">Sansankroma</h3>
+                        <div class="game-country">
+                            <img src="https://flagcdn.com/w40/gh.png" alt="Ghana Flag" class="country-flag">
+                            <span>Ghana</span>
+                        </div>
+                        <p class="game-desc">Sansankroma is a popular and well-known Akan folk song and children's game from Ghana.
+                                            The name "Sansankroma" translates to "Sansa the Hawk." The song tells the story of an orphaned 
+                                            hawk named Sansa who, without a mother or father to care for him, resorts to snatching baby chicks 
+                                            to survive. However, the song's deeper meaning and the moral of the story are rooted in the strong
+                                             sense of community within Akan culture. It serves as a reminder that if a child were to become an 
+                                             orphan, they would not be left to fend for themselves; instead, they would be cared for by a relative
+                                              or the entire village.
+                                            The song is often accompanied by a stone-passing game, where children sit in a circle and pass rocks
+                                             or other objects to a specific rhythm, making it both a fun activity and a way to teach children about 
+                                             communal responsibility and empathy</p>
+                        <button class="watch-btn modern-btn"><span>Watch Video</span></button>
+                        <div class="video-container" style="display:none;">
+                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/_yBsqu79Ztc" title="Sansankroma Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kyaskele -->
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://source.unsplash.com/random/400x300/?ghana,children')"></div>
+                    <div class="game-content">
+                        <h3 class="game-title">Kyaskele</h3>
+                        <div class="game-country">
+                            <img src="https://flagcdn.com/w40/gh.png" alt="Ghana Flag" class="country-flag">
+                            <span>Ghana</span>
+                        </div>
+                        <p class="game-desc">A traditional Ghanaian game involving jumping and rhythm, played by children to develop agility and coordination.</p>
+                        <button class="watch-btn modern-btn"><span>Watch Video</span></button>
+                        <div class="video-container" style="display:none;">
+                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/YCgKbZ26rBU" title="Kyaskele Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nigerian Games -->
+                 <!-- Ayo -->
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://source.unsplash.com/random/400x300/?nigerian,game')"></div>
+                    <div class="game-content">
+                        <h3 class="game-title">Ayo</h3>
+                        
+                        <div class="game-country">
+                            <img src="https://flagcdn.com/w40/ng.png" alt="Nigeria Flag" class="country-flag">
+                            <span>Nigeria</span>
+                        </div>
+                        <p class="game-desc">A mancala game of skill and strategy, also known as "Ayo Olopon" in Yoruba.</p>
+                        <button class="watch-btn modern-btn"><span>Watch Video</span></button>
+                        <div class="video-container" style="display:none;">
+                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/21JTI7_a9Bk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ten-Ten -->
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://source.unsplash.com/random/400x300/?nigeria,children')"></div>
+                    <div class="game-content">
+                        <h3 class="game-title">Ten-Ten</h3>
+                        <div class="game-country">
+                            <img src="https://flagcdn.com/w40/ng.png" alt="Nigeria Flag" class="country-flag">
+                            <span>Nigeria</span>
+                        </div>
+                        <p class="game-desc">A Nigerian clapping and jumping game played mostly by girls, requiring rhythm and quick reflexes.</p>
+                        <button class="watch-btn modern-btn"><span>Watch Video</span></button>
+                        <div class="video-container" style="display:none;">
+                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/nE7jAvuWxuc" title="Ten-Ten" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- South Africa Games -->
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://source.unsplash.com/random/400x300/?game,southafrica')"></div>
+                    <div class="game-content">
+                        <h3 class="game-title">Diketo</h3>
+                        <div class="game-country">
+                            <img src="https://flagcdn.com/w40/za.png" alt="South Africa Flag" class="country-flag">
+                            <span>South Africa</span>
+                        </div>
+                        <p class="game-desc">A traditional South African game involving stones, testing hand-eye coordination and speed.</p>
+                        <button class="watch-btn modern-btn"><span>Watch Video</span></button>
+                        <div class="video-container" style="display:none;">
+                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/2W8Hn4IS0Vk" title="Diketo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://source.unsplash.com/random/400x300/?board,strategy')"></div>
+                   <div class="game-content">
+
+                        <h3 class="game-title">Morabaraba</h3>
+                        <div class="game-country">
+                            <img src="https://flagcdn.com/w40/za.png" alt="South Africa Flag" class="country-flag">
+                            <span>South Africa</span>
+                        </div>
+                        <p class="game-desc">A classic South African board game of strategy, also known as "Twelve Men's Morris", played with 12 tokens per player. Players aim to form mills and capture opponent's pieces.</p>
+                        <button class="watch-btn modern-btn"><span>Watch Video</span></button>
+                        <div class="video-container" style="display:none;">
+                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/SH5pS0aRw10" title="Morabaraba Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://source.unsplash.com/random/400x300/?board,strategy')"></div>
+                   <div class="game-content">
+
+                        <h3 class="game-title">Ncuva</h3>
+                        <div class="game-country">
+                            <img src="https://flagcdn.com/w40/za.png" alt="South Africa Flag" class="country-flag">
+                            <span>South Africa</span>
+                        </div>
+                        <p class="game-desc">A traditional South African board game from the Mancala family, played with pebbles and holes in the ground. Players move pieces to capture the opponent's stones using strategy and planning.</p>
+                        <button class="watch-btn modern-btn"><span>Watch Video</span></button>
+                        <div class="video-container" style="display:none;">
+                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/wP-Lw83n-KY" title="Ncuva Game Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://source.unsplash.com/random/400x300/?board,strategy')"></div>
+                   <div class="game-content">
+
+                        <h3 class="game-title">Kgati</h3>
+                        <div class="game-country">
+                            <img src="https://flagcdn.com/w40/za.png" alt="South Africa Flag" class="country-flag">
+                            <span>South Africa</span>
+                        </div>
+                        <p class="game-desc">A traditional South African skipping game played with a long rope, usually by girls in groups, to develop rhythm, coordination, and fitness.</p>
+                        <button class="watch-btn modern-btn"><span>Watch Video</span></button>
+                        <div class="video-container" style="display:none;">
+                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/OBmGfynZ78" title="Kgati Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Botswana Games -->
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://source.unsplash.com/random/400x300/?board,botswana')"></div>
+                    <div class="game-content">
+                        <h3 class="game-title">Mhele</h3>
+                        <div class="game-country">
+                            <img src="https://flagcdn.com/w40/bw.png" alt="Botswana Flag" class="country-flag">
+                            <span>Botswana</span>
+                        </div>
+                        <p class="game-desc">A traditional Botswana board game similar to checkers, played with stones or seeds on a drawn board, requiring strategy and planning.</p>
+                        <button class="watch-btn modern-btn"><span>Watch Video</span></button>
+                        <div class="video-container" style="display:none;">
+                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/4M4QaD5zXUA" title="Mhele Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://source.unsplash.com/random/400x300/?children,botswana')"></div>
+                    <div class="game-content">
+                        <h3 class="game-title">Matalane Mokgatla</h3>
+                        <div class="game-country">
+                            <img src="https://flagcdn.com/w40/bw.png" alt="Botswana Flag" class="country-flag">
+                            <span>Botswana</span>
+                        </div>
+                        <p class="game-desc">A hide-and-seek style game played by children in many Botswanan communities, encouraging teamwork and agility.</p>
+                        <button class="watch-btn modern-btn"><span>Watch Video</span></button>
+                        <div class="video-container" style="display:none;">
+                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/s8x0OSCl0uE" title="Matalane Mokgatla Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="countries">
+            <h2 class="section-title">Countries</h2>
+            <div class="countries-grid">
+                <div class="country-card">
+                    <a href="ghana.html">
+                        <img src="https://flagcdn.com/w160/gh.png" alt="Ghana Flag" class="country-flag-lg">
+                    </a>
+                    <h3 class="country-name"><a href="ghana.html" style="color:inherit;text-decoration:none;">Ghana</a></h3>
+                    <p class="country-desc">Traditional games like Ampe and Oware are taught in schools as part of cultural education programs.</p>
+                    <ul style="margin-top:1em;">
+                        <li><a href="ghana.html#kwasiada-frankaa">Kwasiada Frankaa</a></li>
+                        <li><a href="ghana.html#oware">Oware</a></li>
+                    </ul>
+                </div>
+
+                <div class="country-card">
+                    <a href="nigeria.html">
+                        <img src="https://flagcdn.com/w160/ng.png" alt="Nigeria Flag" class="country-flag-lg">
+                    </a>
+                    <h3 class="country-name"><a href="nigeria.html" style="color:inherit;text-decoration:none;">Nigeria</a></h3>
+                    <p class="country-desc">Many traditional games are preserved through community events and inter-school competitions.</p>
+                    <ul style="margin-top:1em;">
+                        <li><a href="nigeria.html#ayo">Ayo</a></li>
+                        <li><a href="nigeria.html#ten-ten">Ten-Ten</a></li>
+                    </ul>
+                </div>
+
+                <div class="country-card">
+                    <a href="southafrica.html">
+                        <img src="https://flagcdn.com/w160/za.png" alt="South Africa Flag" class="country-flag-lg">
+                    </a>
+                    <h3 class="country-name"><a href="southafrica.html" style="color:inherit;text-decoration:none;">South Africa</a></h3>
+                    <p class="country-desc">Games like Morabaraba are recognized as indigenous sports with national tournaments.</p>
+                </div>
+
+                <div class="country-card">
+                    <a href="botswana.html">
+                        <img src="https://flagcdn.com/w160/bw.png" alt="Botswana Flag" class="country-flag-lg" loading="lazy">
+                    </a>
+                    <h3 class="country-name"><a href="botswana.html" style="color:inherit;text-decoration:none;">Botswana</a></h3>
+                    <p class="country-desc">Traditional games are celebrated during cultural festivals and passed down through generations.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>We are dedicated to preserving and promoting traditional African games across the continent and worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="#" style="color: white; text-decoration: none;">Home</a></li>
+                        <li><a href="#games" style="color: white; text-decoration: none;">Games</a></li>
+                        <li><a href="#countries" style="color: white; text-decoration: none;">Countries</a></li>
+                        <li><a href="#videos" style="color: white; text-decoration: none;">Videos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="3" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 GROUP 14. African Traditional Games. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top" style="display:none;position:fixed;bottom:40px;right:40px;z-index:99;background:#007bff;color:#fff;border:none;border-radius:50%;width:48px;height:48px;font-size:2em;box-shadow:0 2px 8px rgba(0,0,0,0.2);cursor:pointer;transition:background 0.2s;">↑</button>
+    <script>
+    // Modern video reveal for each game card
+    document.querySelectorAll('.watch-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var video = btn.parentElement.querySelector('.video-container');
+            if (video.style.display === 'none' || video.style.display === '') {
+                video.style.display = 'block';
+                btn.style.display = 'none';
+            }
+        });
+    });
+    // Scroll to top button
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.onscroll = function() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            scrollBtn.style.display = 'block';
+        } else {
+            scrollBtn.style.display = 'none';
+        }
+    };
+    scrollBtn.onclick = function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- https://www.youtube.com/shorts/s8x0OSCl0uE-->
